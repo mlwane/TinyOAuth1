@@ -25,5 +25,6 @@ namespace TinyOAuth1
 		public string AccessTokenUrl { get; set; }
 		public string AuthorizeTokenUrl { get; set; }
 		public string RequestTokenUrl { get; set; }
+        public string CallbackUrl { get; set; } = "oob";
 	}
 }

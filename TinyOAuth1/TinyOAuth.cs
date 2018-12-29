@@ -322,7 +322,7 @@ namespace TinyOAuth1
 				"oauth_timestamp=" + timeStamp,
 				"oauth_nonce=" + nonce,
 				"oauth_version=1.0",
-				"oauth_callback=oob" //TODO: Add parameter so it can be used :)
+				"oauth_callback=" + Uri.EscapeDataString(_config.CallbackUrl)
 			};
 
 			// Appendix A.5.1. Generating Signature Base String
